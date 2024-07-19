@@ -1,38 +1,99 @@
 .App {
   text-align: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-content {
+  display: flex;
+  flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*header*/
+.header {
+  background-color: #e8e8e8;
+  color: #878787;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #d89696;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.header p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+}
+
+/*sidebar*/
+.sidebar {
+  width: 200px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-button {
+  padding: 15px;
+  margin-bottom: 3px;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0 35px 35px 0;
+}
+
+.tab-button:hover {
+  background: #d89696;
+}
+
+.tab-button:last-child {
+  border-bottom: none;
+}
+
+.day-plan {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 1px solid #ddd;
+  border-radius: 35px;
+  max-width: 500px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.time-slots {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.time-slot {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.time {
+  flex: 0 0 80px;
+  font-size: 14px;
+}
+
+.activity {
+  flex: 1;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 20px;
 }
