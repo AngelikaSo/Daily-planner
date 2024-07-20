@@ -11,10 +11,10 @@ const Goals = () => {
 
   return (
     <div className="goals-container">
-      <h1 className="goals-title">Goals:</h1>
-      <ol className="golas">
+      <h2 className="goals-title">Goals:</h2>
+      <ol className="golas-list">
         {goals.map((goal, index) => (
-          <li className="goal" key={index}>
+          <li className="goal-item" key={index}>
             <input
               className="goal-input"
               type="text"

@@ -11,7 +11,9 @@ function App() {
       <div className="main-content">
         <Sidebar />
         <DayPlan />
-        <Goals />
+        <div className="aside-container">
+          <Goals />
+        </div>
       </div>
     </div>
   );
