@@ -7,11 +7,16 @@
 .main-content {
   display: flex;
   flex: 1;
+  background-color: #e8e8e8;
+}
+
+.aside-container {
+  margin-left: 15px;
 }
 
 /*header*/
 .header {
-  background-color: #e8e8e8;
+  background-color: #ece2e2;
   color: #878787;
   padding: 20px;
   text-align: center;
@@ -58,6 +63,10 @@
   background: #d89696;
 }
 
+.tab-button:first-child {
+  background-color: #d89696;
+}
+
 .tab-button:last-child {
   border-bottom: none;
 }
@@ -66,7 +75,7 @@
   flex: 1;
   padding: 20px;
   background-color: #f9f9f9;
-  border-left: 1px solid #ddd;
+  border-left: none;
   border-radius: 35px;
   max-width: 500px;
   margin-left: 10px;
@@ -96,4 +105,24 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   min-height: 20px;
+}
+
+/* Goals */
+.goals-container {
+  width: 450px;
+  height: 200px;
+  margin: 5px auto 0;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #d89696;
+  border-radius: 35px;
+}
+
+.goal-input {
+  width: 390px;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
 }
