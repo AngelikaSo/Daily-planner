@@ -13,15 +13,22 @@ for (let i = 6; i <= 22; i++) {
 console.log(hours);
 
 const DayPlan = () => {
-  const [hourly, setHourly] = useState([]);
   return (
-    <div className="day-plan">
-      <h2>Today's Plan</h2>
-      <div className="time-slots">
-        <span className="time">6:00 AM</span>
-        <input className="activity" placeholder="Add activity..." />
+    <>
+      <div className="day-plan">
+        <h2>Today's Plan</h2>
+        <ul className="time-slots">
+          {hours.map((hour) => (
+            <li>
+              <label className="time">{hour} </label>
+              <div className="activity-container">
+                <input className="activity" placeholder="Add activity..." />
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
-    </div>
+    </>
   );
 };
 
