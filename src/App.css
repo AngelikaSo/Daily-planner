@@ -90,10 +90,8 @@ h2,
 }
 
 .day-plan {
-  flex: 1;
   padding: 20px;
   background-color: #f9f9f9;
-  border-left: none;
   border-radius: 35px;
   max-width: 500px;
   margin-left: 10px;
@@ -102,27 +100,47 @@ h2,
 
 .time-slots {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-.time-slot {
+.time-slots li {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
+  margin-bottom: 15px;
 }
 
 .time {
-  flex: 0 0 80px;
+  flex: 0 0 10%;
   font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.activity-container {
+  flex: 0 0 90%;
 }
 
 .activity {
-  flex: 1;
-  padding-left: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   min-height: 20px;
+  padding: 8px;
+  width: 95%;
+  font-size: 14px;
+}
+
+.activity:focus {
+  border-color: #d89696;
+  outline: none;
+}
+
+.activity::placeholder {
+  color: #aaa;
 }
 
 /* Goals */
