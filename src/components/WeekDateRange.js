@@ -21,7 +21,7 @@ const WeekDateRange = () => {
     setWeekRange(formattedRange);
   }, []);
 
-  return <p>{weekRange}</p>;
+  return <p className="header__content">{weekRange}</p>;
 };
 
 export default WeekDateRange;

@@ -4,7 +4,7 @@ const NotesComponent = () => {
   const notesTitle = ["Ideas", "Challenges", "Affirmations"];
 
   return (
-    <div className="notesContainer">
+    <div className="notes">
       {notesTitle.map((title, index) => (
         <Note key={index} title={title} />
       ))}

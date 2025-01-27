@@ -1,5 +1,5 @@
 const Note = ({ title }) => {
-  return <div className="noteTitle">{title}</div>;
+  return <div className="notes__title">{title}</div>;
 };
 
 export default Note;
