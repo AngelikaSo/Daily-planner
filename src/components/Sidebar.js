@@ -10,9 +10,9 @@ const Sidebar = () => {
   ];
   return (
     <div className="sidebar">
-      <div className="tabs">
+      <div className="sidebar__tabs">
         {daysOfWeek.map((day) => (
-          <button key={day} className="tab-button">
+          <button key={day} className="sidebar__button">
             {day}
           </button>
         ))}

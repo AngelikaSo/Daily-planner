@@ -15,14 +15,17 @@ console.log(hours);
 const DayPlan = () => {
   return (
     <>
-      <div className="day-plan">
-        <h2>Today's Plan</h2>
-        <ul className="time-slots">
+      <div className="dayPlan">
+        <h2 className="dayPlan__title">Today's Plan</h2>
+        <ul className="dayPlan__list">
           {hours.map((hour) => (
-            <li>
-              <label className="time">{hour} </label>
-              <div className="activity-container">
-                <input className="activity" placeholder="Add activity..." />
+            <li className="dayPlan__listItem">
+              <label className="dayPlan__listItem-time">{hour} </label>
+              <div className="dayPlan__listItem-inputContainer">
+                <input
+                  className="dayPlan__listItem-input"
+                  placeholder="Add activity..."
+                />
               </div>
             </li>
           ))}

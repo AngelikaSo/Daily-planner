@@ -7,16 +7,16 @@ import NotesComponent from "./components/NotesComponent.js";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
-      <div className="main-content">
+      <div className="app__main">
         <Sidebar />
         <DayPlan />
-        <div className="aside-container">
+        <div className="app__aside">
           <Goals />
         </div>
       </div>
-      <div className="notes-container">
+      <div className="app__notes">
         <NotesComponent />
       </div>
     </div>
