@@ -1,7 +1,5 @@
 // Create a function that will display a list of hours from 6am to 10pm
 
-import { useState } from "react";
-
 const hours = [];
 for (let i = 6; i <= 22; i++) {
   let hour = i > 12 ? i - 12 : i;
