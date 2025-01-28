@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar.js";
 import DayPlan from "./components/DayPlan.js";
 import Goals from "./components/Goals.js";
 import NotesComponent from "./components/NotesComponent.js";
+import Todo from "./components/ToDoList.js";
 
 function App() {
   return (
@@ -12,9 +13,8 @@ function App() {
       <div className="app__main">
         <Sidebar />
         <DayPlan />
-        <div className="app__aside">
-          <Goals />
-        </div>
+        <Goals />
+        <Todo />
       </div>
       <div className="app__notes">
         <NotesComponent />
