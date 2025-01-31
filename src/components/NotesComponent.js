@@ -1,7 +1,7 @@
 import Note from "./Note";
 
 const NotesComponent = () => {
-  const notesTitle = ["Ideas", "Challenges", "Affirmations"];
+  const notesTitle = ["Ideas", "Challenges", "Notes"];
 
   return (
     <div className="notes">

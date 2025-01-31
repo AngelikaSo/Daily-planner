@@ -13,7 +13,7 @@
 .app__main {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 400px);
+  grid-template-rows: repeat(4, 400px);
   gap: 10px;
 }
 
@@ -45,7 +45,6 @@
 
 /*sidebar*/
 .sidebar {
-  /* width: 200px;*/
   height: 100vh;
   grid-column: 1 / 1;
   margin-top: 5px;
@@ -135,6 +134,16 @@
   color: #aaa;
 }
 
+/* Metrics */
+.metrics {
+  grid-column: 1 / 2;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
 /* Goals */
 .goals {
   grid-column: 5 / 7;
@@ -163,8 +172,17 @@
 
 .todoList {
   grid-column: 5 / 7;
-  grid-row: 2 /4;
-  /*height: 200px;*/
+  grid-row: 2 /2;
+  margin: 5px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #d89696;
+  border-radius: 35px;
+}
+
+/* Daily Afirmations */
+.affirmations {
+  grid-column: 5 / 7;
   margin: 5px;
   padding: 20px;
   background-color: #fff;
@@ -173,6 +191,11 @@
 }
 
 /* Notes Component */
+
+.app__notes {
+  display: grid;
+  grid-column: 1 / 7;
+}
 
 .notes {
   display: flex;
