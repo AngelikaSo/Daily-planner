@@ -5,6 +5,8 @@ import DayPlan from "./components/DayPlan.js";
 import Goals from "./components/Goals.js";
 import NotesComponent from "./components/NotesComponent.js";
 import Todo from "./components/ToDoList.js";
+import DailyAffirmations from "./components/DailyAffirmations.js";
+import Metrics from "./components/Metrics.js";
 
 function App() {
   return (
@@ -12,12 +14,14 @@ function App() {
       <Header />
       <div className="app__main">
         <Sidebar />
+        <Metrics />
         <DayPlan />
         <Goals />
         <Todo />
-      </div>
-      <div className="app__notes">
-        <NotesComponent />
+        <DailyAffirmations />
+        <div className="app__notes">
+          <NotesComponent />
+        </div>
       </div>
     </div>
   );
