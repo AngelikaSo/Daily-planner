@@ -144,6 +144,22 @@
   margin-top: 5px;
 }
 
+.metrics__icon {
+  padding-right: 5px;
+  width: 20px;
+  height: 20px;
+  fill: #e0e0e0;
+}
+
+.metrics__icon-acvtive {
+  fill: #d89696;
+}
+
+.metrics__icon-mood {
+  width: 25px;
+  height: 25px;
+}
+
 /* Goals */
 .goals {
   grid-column: 5 / 7;
