@@ -56,8 +56,8 @@
 }
 
 .sidebar__button {
-  padding: 15px;
-  margin-bottom: 3px;
+  padding: 16px;
+  margin-bottom: 5px;
   border: none;
   background: #e0e0e0;
   cursor: pointer;
@@ -137,6 +137,7 @@
 /* Metrics */
 .metrics {
   grid-column: 1 / 2;
+  grid-row: span 2;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 15px;
@@ -149,17 +150,21 @@
   width: 20px;
   height: 20px;
   fill: #e0e0e0;
+  margin-bottom: 15px;
 }
 
-.metrics__icon-acvtive {
-  fill: #d89696;
-}
-
-.metrics__icon-mood {
+.metrics__icon-reading,
+.metrics__icon-sleep,
+.metrics__icon-exercise,
+.metrics__icon-mood,
+.metrics__icon-health {
   width: 25px;
   height: 25px;
 }
 
+.metrics__title {
+  padding-bottom: 10px;
+}
 /* Goals */
 .goals {
   grid-column: 5 / 7;
@@ -167,7 +172,6 @@
   margin: 5px;
   padding: 20px;
   background-color: #fff;
-  border: 2px solid #d89696;
   border-radius: 35px;
 }
 
@@ -192,7 +196,6 @@
   margin: 5px;
   padding: 20px;
   background-color: #fff;
-  border: 2px solid #d89696;
   border-radius: 35px;
 }
 
@@ -202,7 +205,6 @@
   margin: 5px;
   padding: 20px;
   background-color: #fff;
-  border: 2px solid #d89696;
   border-radius: 35px;
 }
 

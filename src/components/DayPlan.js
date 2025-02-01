@@ -1,7 +1,7 @@
 // Create a function that will display a list of hours from 6am to 10pm
 
 const hours = [];
-for (let i = 6; i <= 22; i++) {
+for (let i = 6; i <= 23; i++) {
   let hour = i > 12 ? i - 12 : i;
   let period = i >= 12 ? "PM" : "AM";
   let formatedHours = `${hour} ${period}`;
